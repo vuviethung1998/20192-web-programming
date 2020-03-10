@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
-    <head> 
-        <title>HTML With PHP Embedded</title> </head>
-    <body> 
-        <font size=5 color=”blue”>Welcome To My Page</font>
+    <head>
+        <meta charset="UTF-8">
+        <title>Expression</title>
+    </head>
+    <body>
         <?php
-        print ("<br> Using PHP is not hard<br>");
+            $gr1 = 50;
+            $gr2 = 100;
+            $gr3 = 75;
+            $aver = ($gr1 + $gr2 + $gr3) / 3;
+            print "The average is $aver";
         ?>
-        and you can learn to use it quickly! 
     </body>
 </html>
