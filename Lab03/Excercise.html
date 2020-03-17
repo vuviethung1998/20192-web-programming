@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A simple form</title>
+    </head>
+    <body>
+        <form action="Excercise.php" method="POST">
+            <br>
+            Enter Username
+            <input type="text" size="16" maxlength="20" name="usename" value="">
+            <br>
+            Enter Class
+            <input type="text" size="16" maxlength="20" name="class" value="">
+            <br>
+            Enter University
+            <input type="text" size="16" maxlength="20" name="university" value="">
+            <br>
+            Choose your hobbies:
+            <br>
+            <input type="checkbox" id="study1" name="check_list[]" value="Study">
+            <label for="study1">Study</label><br>
+            <input type="checkbox" id="study2" name="check_list[]" value="Study more">
+            <label for="study2"> Study more</label><br>
+            <input type="checkbox" id="study3" name="check_list[]" value="Study more and more">
+            <label for="study3">Study more and more</label><br>
+            <input type="checkbox" id="study4" name="check_list[]" value="Study more and more and more">
+            <label for="study4">Study more and more and more</label><br>
+            <br>
+            <input type="submit"  value="Click to submit">
+            <input type="reset"  value="Erase and Restart">
+            <br>
+        </form>
+    </body>
+</html>
