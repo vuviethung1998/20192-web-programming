@@ -11,16 +11,19 @@
     <hr>
     <?php
       if (isset($_SESSION['pages'])) {
-        $pages = $_SESSION['pages'];
+
+          $pages = $_SESSION['pages'];
       } else {
+          
         $pages = array();
       }
       echo count($pages);
-      if (isset($_POST['content']) && isset($_POST['creator']) && isset($_POST['title'])) {
-        $content = $_POST['content'];
+      if (isset($_POST['content']) &&  isset($_POST['title']) && isset($_POST['creator'])) {
         $creator = $_POST['creator'];
         $title = $_POST['title'];
-        if ((count($content) != 0) && (count($creator) != 0) && (count($title) != 0)) {
+        $content = $_POST['content'];
+        
+        if ((count($creator) != 0) && (count($content) != 0) &&  (count($title) != 0)) {
           $newPage = new Page($title, $content, $creator);
           echo $newPage->get();
           $pages[] = $newPage;
@@ -31,7 +34,7 @@
       <table>
         <tr>
           <td>
-            <label>Name: </label>
+            <label>Name:   </label>
           </td>
           <td>
             <input type="text" name="creator">
@@ -39,7 +42,7 @@
         </tr>
         <tr>
           <td>
-            <label>Title: </label>
+            <label>Title:    </label>
           </td>
           <td>
             <input type="text" name="title">
@@ -47,7 +50,7 @@
         </tr>
         <tr>
           <td>
-            <label>Content of page: </label>
+            <label>Content of page:   </label>
           </td>
           <td>
             <textarea rows="6" cols="60" name="content" placeholder="Enter the content...."></textarea>
