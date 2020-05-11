@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student [
+
+
+    <!ELEMENT student (id, name, class, university)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT class (#PCDATA)>
+    <!ELEMENT university (#PCDATA)>
+]>
+
+<student> 
+    <id>20162050</id>
+    <name>Vu Viet Hung</name>
+    <class>ICT.02</class>
+    <university>Ha Noi University of science and technology</university>
+</student> 
