@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COLORS</title>
+
+    <body>
+      <script>
+        function onMouseOver(color) {
+          document.getElementById("text_color").style.color = color;
+        }
+
+        function onMouseOut() {
+          document.getElementById("text_color").style.color = "black";
+        }
+      </script>
+
+      <a
+        href=""
+        style="color: red;"
+        onmouseover="onMouseOver('red')"
+        onmouseout="onMouseOut()"
+        >RED</a
+      ><br />
+      <a
+        href=""
+        style="color: green;"
+        onmouseout="onMouseOut()"
+        onmouseover="onMouseOver('green')"
+        
+        >GREEN</a
+      ><br />
+      <a
+        href=""
+        style="color: blue;"
+        onmouseout="onMouseOut()"
+        onmouseover="onMouseOver('blue')"
+        
+        >BLUE</a
+      ><br />
+      <p id="text_color" style="color: black;">Colored text</p>
+    </body>
+  </head>
+</html>
